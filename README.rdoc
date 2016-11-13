@@ -1,3 +1,16 @@
+This is not so secretly where I'm keeping my notes on starting up the project
+once I've shut everything down and come back to it later.
+
+`docker-compose up -d` to start the web service and db, -d runs things in background
+`docker-compose ps` lists things up, you'll need the name of the web container
+`docker exec -it {name of web container} bash` runs bash in the container, commands can now be used in this prompt
+
+in that prompt, when I'm ready to stop....
+`docker-compose stop` stops the running containers
+`docker-compose rm` removes the stopped containers (clean up)
+
+I might need a `docker-compose build` in there somewhere?
+
 == README
 
 This README would normally document whatever steps are necessary to get the
